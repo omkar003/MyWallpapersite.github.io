@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap");
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dbdbdb;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 6px #ffffff, -3px -3px 6px #fff;
+          box-shadow: 3px 3px 6px #ffffff, -3px -3px 6px #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2e00ad;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0 !important;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fdf2e0ff;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#Main {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+}
+
+#Main nav {
+  position: relative;
+  border-radius: 20px;
+  margin: 15px;
+  position: fixed;
+  width: 97.5vw;
+  height: 60px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+#Main nav .menu-btn,
+#Main nav .menu-icon {
+  display: none;
+}
+
+#Main nav .menu {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Main nav .menu li a {
+  margin: 0 40px 0 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff6600;
+  line-height: 40px;
+}
+
+#Main nav .logo {
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0;
+  font-weight: 600;
+  font-family: "Quattrocento", serif;
+  color: black;
+}
+
+#Main nav .logo font {
+  color: #ff9100;
+}
+
+#Main nav a {
+  width: 120px;
+  height: 45px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#Main nav .sign-in {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  background: none;
+  margin: 10px;
+}
+
+#Main nav .sign-up {
+  font-size: 1rem;
+  font-weight: 600;
+  background: #ff6600;
+  color: white;
+  -webkit-box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#Main nav .user {
+  text-align: right;
+  color: #3a3a3a;
+  display: none;
+}
+
+#Main nav .user i {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.6rem;
+}
+
+#Main .Hero {
+  position: absolute;
+  width: 97.5vw;
+  height: 50vh;
+  border-radius: 20px;
+  background-color: white;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 6%;
+}
+
+#Main .Hero h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#Main .Hero font {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#Main .Hero button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #ff7b00;
+  background: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 12px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 12px 16px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+#Main .Hero button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  letter-spacing: 1px;
+}
+
+.data {
+  min-height: auto;
+  width: 70%;
+  left: 20%;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  background-color: #ffd298;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.data .img .box1 {
+  width: 220px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.data .img .box1 img {
+  width: 220px;
+  height: 300px;
+  padding: 10px;
+}
+
+.data .img .box1 button {
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none;
+  background: #ffaa48;
+  cursor: pointer;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.data .img .box1 button:hover {
+  background: #ff6600;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+@media only screen and (max-width: 800px) {
+  #Main nav {
+    padding: 20px;
+  }
+  #Main nav .menu {
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+    display: none;
+  }
+  #Main nav .menu-icon {
+    display: block;
+  }
+  #Main nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  #Main nav .menu-icon .nav-icon {
+    background-color: #333333;
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transition: background 0.2s ease-out;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  #Main nav .menu-icon .nav-icon:before,
+  #Main nav .menu-icon .nav-icon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: all ease-out 0.2s;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+  #Main nav .menu-icon .nav-icon:before {
+    top: 5px;
+  }
+  #Main nav .menu-icon .nav-icon:after {
+    top: -5px;
+  }
+  #Main nav .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  #Main nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
+  }
+  #Main nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+  }
+  #Main nav .menu-btn {
+    display: none;
+  }
+  #Main nav .menu-btn:checked ~ .menu {
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+    position: fixed;
+    top: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    width: 100vw;
+    height: 30vh;
+    display: block;
+    background: white;
+    border-bottom: 2px solid #00053b;
+  }
+  #Main nav .menu-btn:checked ~ .menu li a {
+    line-height: 50px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #Main nav .logo {
+    padding-left: 0px;
+  }
+  #Main nav .menu {
+    display: none;
+  }
+  #Main nav .menu-btn {
+    display: none;
+  }
+  #Main nav .menu-icon {
+    display: block;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  #Main nav .sign-in,
+  #Main nav .sign-up {
+    display: none;
+  }
+  #Main nav .user {
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: block;
+  }
+  #Main .Hero {
+    padding-top: 12%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
